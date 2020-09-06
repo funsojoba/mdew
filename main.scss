@@ -141,7 +141,7 @@ clip-path: circle(4.8% at 99% 1%);
 
 
 .nav{
-    padding: $ten * 2;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -421,7 +421,6 @@ clip-path: circle(4.8% at 99% 1%);
 //SECTION TWO
 
 .section-two{
-    padding: $fifty;
     background: #F2F2F2;
     overflow: hidden;
 
@@ -476,7 +475,7 @@ clip-path: circle(4.8% at 99% 1%);
 
 .section-three{
     display: flex;
-    height: 100vh;
+    // // height: 60vh;
     justify-content: center;
     align-items: center;
     background: #202601;
@@ -490,7 +489,7 @@ clip-path: circle(4.8% at 99% 1%);
     &>div{
         padding: $fifty*2;
         flex: 1;
-        height: 100%;
+        // height: 100%;
 
         @media only screen and (max-width:850px){
             padding: $fifty*2 $fifty ;
@@ -512,10 +511,11 @@ clip-path: circle(4.8% at 99% 1%);
        flex-direction: column;
        justify-content: center;
        align-items: center;
+       text-align: center;
 
        @media only screen and (max-width: 850px){
         width: 100%;
-        padding: $thirty;
+        padding: $ten*2;
     }
 
 
@@ -543,7 +543,14 @@ clip-path: circle(4.8% at 99% 1%);
                 background-image: linear-gradient(to bottom right, #484E2C, #2E3316);
                 color: $lightGreen;
                margin: $ten/2;
-               border-radius: $ten ;
+               border-radius: 50% ;
+               width: 100px;
+               height: 100px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
                h1{
                    font-size: em;
                   
@@ -679,7 +686,6 @@ clip-path: circle(4.8% at 99% 1%);
 
                 &:hover{
                     background: $lightGreen;
-                    
                 }
               }
           }
@@ -702,10 +708,13 @@ clip-path: circle(4.8% at 99% 1%);
         // height: auto;
         padding: $fifty;
     }
+    @media only screen and (max-width: 850px){
+        padding: $thirty;
+    }
 
 
     &-header{
-        padding: $fifty;
+        padding: $thirty;
         text-align:center ;
         color: $gray;
         @media only screen and (max-width: 400px){
@@ -718,60 +727,69 @@ clip-path: circle(4.8% at 99% 1%);
     &-box{
         padding: $fifty;
         display: flex;
-        justify-content: center;
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
         align-items: center;
-        
 
-        @media only screen and (max-width: 850px){
+        @media only screen and(max-width:850px){
             flex-direction: column;
-            margin-top: $ten * 2;
-            height: 100%;
+            width: 100%;
+            padding: $ten*2;
+            text-align: center;
         }
-
-        a{
-            display: inline-block;
-        }
-        .card{
-            padding: $thirty;
+        
+        &-card{
+            width: 250px;
+            margin: $ten;
+            padding: $ten * 2;
             background: $white;
-            margin: $thirty;
-            width: 300px;
-            height: 120px;
-            color: $green;
-            text-decoration: none;
+            box-shadow: $shadow;
             transition: $transition;
-            @media only screen and(max-width:850px){
-                width: 280px;
-                margin: $ten;
-            }
-            
+
             &:hover{
-                transform: scale(1.12);
-                box-shadow: $shadow;
+                transform: translateY(-10px);
+                transform: scale(1.03);
+            }
+
+
+            a{
+                @include btn($deepgreen, $white, none);
+                display: block;
+                margin-top: $ten;
+                text-decoration: none;
+                text-align: center;
+                transition: $transition;
+                &:hover{
+                    transform: translateX(3px);
+                   
+                }
             }
         }
+        
+       
 
     }
 }
 
 .section-six{
-    padding: $fifty*2;
+    padding: $fifty*2 $fifty;
     background: $lightGray;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 
     @media only screen and (max-width:850px){
-        padding: $thirty;
+        padding: 0;
     }
 
     &-header{
         text-align: center;
-        padding: $fifty;
+        padding: $fifty/2 ;
         color: $gray;
 
         @media only screen and (max-width:1400px){
-            padding: $fifty/2;
+            padding: $ten*2;
         }
     }
 
@@ -791,10 +809,13 @@ clip-path: circle(4.8% at 99% 1%);
             background: $white;
             box-shadow: $shadow;
             h4{
-                margin-bottom: $ten;
+                margin-bottom: $ten*2;
+                text-transform: uppercase;
+                
             }
             h5{
                 text-align: right;
+                margin: $ten;
             }
 
 
