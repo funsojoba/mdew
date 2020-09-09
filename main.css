@@ -429,8 +429,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
-  background: #ffffff;
+  background: #ECECEC;
   color: #727272;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -985,7 +984,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media only screen and (max-width: 850px) {
   .section-six {
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -1129,5 +1128,76 @@ footer {
 
 .to-top a {
   color: #ff004c;
+}
+
+.audio-section {
+  padding: 50px;
+}
+
+.audio-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  place-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .audio-section-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.audio-section-container-image {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.audio-section-container-image img {
+  width: 100%;
+}
+
+.audio-section-container-content {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  .audio-section-container-content {
+    margin-left: 0;
+  }
+}
+
+.audio-section-container-content P {
+  margin-bottom: 30px;
+}
+
+.audio-section-container-content a {
+  padding: 10px 30px;
+  letter-spacing: 5px;
+  background: #1B2618;
+  color: #F4FFBE;
+  border-radius: 30px;
+  border: 1px solid #0B6700;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  transition: all 300ms ease;
+}
+
+.audio-section-container-content a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 /*# sourceMappingURL=main.css.map */

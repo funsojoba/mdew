@@ -376,8 +376,8 @@ clip-path: circle(4.8% at 99% 1%);
 
 .testimonies{
     display: flex;
-    padding: $thirty;
-    background: #ffffff;
+    // padding: $fifty;
+    background: $lightGray;
     color: #727272;
     justify-content: center;
     align-items: center;
@@ -780,7 +780,7 @@ clip-path: circle(4.8% at 99% 1%);
     overflow: hidden;
 
     @media only screen and (max-width:850px){
-        padding: 0;
+        padding: $ten;
     }
 
     &-header{
@@ -877,5 +877,60 @@ footer{
 
     a{
         color: #ff004c;
+    }
+}
+
+.audio-section{
+    padding: $fifty;
+    // background: $verydeepgreen;
+
+    &-container{
+        // width: 70%;
+        // margin: auto;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        place-items: center;
+
+        @media only screen and (max-width:850px){
+            flex-direction: column;
+        }
+
+        &-image{
+            width: 300px;
+            overflow: hidden;
+            border-radius: $ten;
+            height: 300px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &-content{
+            padding: $ten;
+            margin-left: $ten*2;
+
+            @media only screen and (max-width: 850px){
+                margin-left: 0;
+            }
+
+            P{
+                margin-bottom: $thirty;
+            }
+
+            a{
+                @include btn($verydeepgreen, $lightGreen, $border);
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                margin-top: $ten;
+                transition: $transition;;
+
+                &:hover{
+                    transform: translateY(-$ten/2);
+                }
+            }
+        }
     }
 }
