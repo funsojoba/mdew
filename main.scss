@@ -207,6 +207,7 @@ clip-path: circle(4.8% at 99% 1%);
         display: flex;
         justify-content: center;
         align-items: center;
+        line-height: 1.6;
         @media only screen and (max-width:850px){
             padding: $thirty;
         }
@@ -610,6 +611,7 @@ clip-path: circle(4.8% at 99% 1%);
 
             h1, p{
                 margin-bottom: $thirty;
+                line-height: 1.6;
             }
 
             a{
@@ -882,6 +884,7 @@ footer{
 
 .audio-section{
     padding: $fifty;
+    line-height: 1.6;
     // background: $verydeepgreen;
 
     &-container{

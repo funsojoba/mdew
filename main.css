@@ -226,6 +226,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1.6;
 }
 
 @media only screen and (max-width: 850px) {
@@ -759,6 +760,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .section-four-text-container h1, .section-four-text-container p {
   margin-bottom: 30px;
+  line-height: 1.6;
 }
 
 .section-four-text-container a {
@@ -1132,6 +1134,7 @@ footer {
 
 .audio-section {
   padding: 50px;
+  line-height: 1.6;
 }
 
 .audio-section-container {
